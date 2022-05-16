@@ -9,6 +9,7 @@ body{
 .olympic_ring{
     width: 146px;
     height: 122px;
+    margin-left: -65px ;
 }
 .titlebar{
     display: flex;
@@ -24,7 +25,8 @@ nav a{
 nav{
     display: grid;
     grid-template-columns: repeat(6,100px);
-    /* padding-left: 500px; */
+    font-family: 'Encode Sans Expanded', sans-serif;
+            font-weight: lighter;
 }
  .download{
     height: 40px;
@@ -36,7 +38,42 @@ nav{
     left: 1250px;
     top: 70px;
     color: #fff;
-    font-weight: bold;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+.blog{
+    padding-left: 25px;
+}
+.port, .service{
+    padding-left: 15px;
+}
+.follow{
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #c6283e;
+    padding: 13px;
+    padding-bottom: 85px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.hor_line{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    /* color: #e3223d; */
+    border-bottom: 1px solid #c6283e;
+    writing-mode: vertical-lr;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 240px;
+    right: 0.2px;
+} 
+.follow_line{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1400px;
+    top: 200px;
 }
 
 
@@ -44,13 +81,25 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 200px;
+    padding-left: 165px;
     margin-top: 100px;
     
     line-height: 2em;
 }
 h1,p,h6{
     color: #fff;
+}
+h1{
+    font-family: 'Cantata One', serif;
+        font-size: 50px;
+} 
+h6{
+    font-family: 'Carme', sans-serif;}
+    
+.first_para {
+    font-family: 'Encode Sans Expanded', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
 }
 .wel{
     color: #fff;
@@ -68,19 +117,21 @@ h6{
     margin-top: 8px;
 }
 p{
-    font-size: 15px;
-    margin-top: 15px;
+    /* font-size: 15px; */
+    margin-top: 8px;
+
 }
 .welcome{
     padding-right: 800px;
     font-size: 20px;
+    /* line-height: 30px; */
 }
 .man{
     position: absolute;
     width: 470px;
     height: 550px;
     left: 800px;
-    bottom: 120px;
+    bottom: 127px;
     z-index: 2;
 }
 .circle1{
@@ -122,35 +173,43 @@ p{
 .grants{
     display:flex ;
     background-color: #292443;
-    height: 200px;
+    height: 300px;
     align-items: center;
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 20px;
     justify-content: space-around;
+    position: relative;
 
 }
 .box1, .box2, .box3, .box4{
-    width: 185px;
-    height: 130px;
+    width: 250px;
+    height: 180px;
     border-top-right-radius: 40px;
     color: #fff;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
      /* padding-top: 50px;  */
-    /*padding-left: 40px;
-    padding-right: 40px; */
-    padding: 30px;
+    /*padding-left: 40px;*/
+    padding: 35px;
 
 }
 .box1, .box3, .box4{
     border: 2px dashed #73354f;
+    padding-right: 100px;
+    text-align: center;
+
+
 }
 .box2{
     border: 1px solid #73354f;
+    padding-right: 150px;
+    
+
 
 
 }
+
 .num, .num1{
     font-weight: bolder;
     font-size: 30px;
@@ -160,6 +219,8 @@ p{
 .main{
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
+    /* position: relative; */
 }
 .port{
     display: flex;
@@ -169,19 +230,20 @@ p{
 .photo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 11%;
+    padding-right: 11%;
     padding-top: 40px;
     gap: 20px;
 }
 .items{
-    padding-left: 200px;
+    padding-left: 153px;
     padding-top: 50px;
+    width: 34%;
 
 }
 .items1{
     padding-top: 50px;
-    padding-left: 230px;
+    padding-left: 313px;
 }
 h2{
     font-size: 40px;
@@ -195,6 +257,9 @@ h2{
     height: 50px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: bold;
+
 }
  .professional{
     width: 200px;
@@ -205,6 +270,10 @@ h2{
     margin-left: -5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: bold;
+
+
 } 
 .personal{
     width: 200px;
@@ -213,6 +282,10 @@ h2{
     color: #fff;
     border-style: none;
     margin-left: -5px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: bold;
+
+
 
 
 }
@@ -222,8 +295,10 @@ h2{
     border-radius: 5px;
 }
 .paragraph{
-    line-height: 25px;
-    font-weight: lighter;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 .view{
     background-color: #df213c;
@@ -235,6 +310,8 @@ h2{
     margin-left: 46%;
     margin-top: 60px;
     font-size: 16px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+
 }
 
 .experience{
@@ -245,7 +322,8 @@ h2{
     padding-top: 50px;
 }
 .exp{
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'Cantata One', serif;
 }
 .exp_p{
     font-size: 15px;
@@ -261,9 +339,17 @@ h2{
     justify-content: space-around;
     margin-top: 30px;
     text-align: left;
+
 }
 .step1, .step2, .step3, .step4, .step5{
-    font-size: 15px;
+    font-size: 12px;
+    width: 160px;
+    border-left: 2px solid #df213c;
+    padding-left: 40px;
+    font-family: 'Cantata One', serif;
+
+
+
     
 }
 .steps1{
@@ -275,6 +361,9 @@ h2{
     color: #fff;
     padding-left: 20%;
     padding-right: 20%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+
+
 }
 .years{
     display: flex;
@@ -294,13 +383,13 @@ h2{
     color: #fff;
     font-size: 25px;
     font-weight: bolder;
-    padding-top: 8px;
+    padding-top: 6px;
     letter-spacing: 2px;
+    position: relative;
 }
 .contact_us{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
     padding-top: 100px;
     padding-left: 12%;
    
@@ -328,8 +417,8 @@ h2{
 }
 
 .name, .email, .phone, .budget{
-    height: 80px;
-    width: 380px;
+    height: 75px;
+    width: 322px;
     background: transparent;
     border-style: none;
     border: 1px solid gray;
@@ -355,7 +444,7 @@ h5, .drop{
     margin-bottom: 20px;
 }
 .contact2{
-    padding-left: 20px;
+    padding-left: 132px;
     margin-top: -15px;
 }
 .details{
@@ -364,10 +453,11 @@ h5, .drop{
     padding-top: 50px;
 }
 .small_circle{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: #de203b;
     border-radius: 50%;
+    margin-right: 20px;
     
 }
 .cont, .cont1, .cont2{
@@ -375,4 +465,206 @@ h5, .drop{
     flex-direction: row;
     padding-bottom: 20px;
 }
+.submit_button{
+    height: 60px;
+    width: 150px;
+    background-color: #df213c;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    margin-left: 45%;
+    margin-top: 60px;
+    font-size: 15px;
 
+}
+
+.endline{
+    height: 470px;
+    background-color: #292443;
+    margin-top: 100px;
+}
+.final_circle{
+    /* background-color:#241428; */
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+     left: 40%;
+    border: 1px dashed #61596c;
+    margin-top: 40px;
+
+}
+.horizontal_line{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    border: 1px solid #554f5e;
+    /* border-bottom: 2px solid #e3223d; */
+    margin-bottom: 50px;
+    position: absolute;
+    margin-top: 400px;
+
+}
+.end_line{
+    text-align: center;
+    margin-top: 100px;
+}
+.let{
+    font-size: 40px;
+}
+.mail{
+    font-size: 15px;
+}
+.lastline{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.fa-brands{
+    color: #c6283e;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+#square1, #square2, #square3, #square4{
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    background-color: #c6283e;
+    position: absolute;
+    padding-top: 10px;
+    top: 45px;
+    border-radius: 2px;
+}
+
+.exp{
+    font-family: 'Times New Roman', Times, serif ;
+}
+.exp_p{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 12px;
+}
+.dot_image{
+    position: absolute;
+}
+.main .blob_circle{
+    color: #c6283e;
+    font-size: 25px;
+    position: absolute;
+    right: 50px;
+    top: 1025px;
+}
+.experience .blob_circle{
+    color: #c6283e;
+    font-size: 25px;
+    position: absolute;
+    left: 70px;
+    margin-top: -50px;
+
+}
+.details .fa-solid{
+    color: white;
+    padding-left: 13px;
+    padding-top: 14px;
+    font-size: 18px;
+} 
+.contact_para{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 15px;
+}
+
+.det{
+    color: gray;
+    font-family: 'Encode Sans Expanded', sans-serif;  
+    font-size: 15px; 
+}
+.val{
+    color: white;
+    font-family: 'Encode Sans Expanded', sans-serif;   
+}
+
+
+.triangle{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid #e8203d;
+    position: absolute;
+    left: 150px;
+    bottom: 1px;
+}
+.oneline{
+    display: inline-block;
+    width: 80px;
+    border-bottom: 2px solid #e8203d;
+    position: absolute;
+    left: 175px;
+    top: 18px;
+}
+.num, .num1, .num2{
+    font-family: 'Cantata One', serif;
+}
+
+.container_triangle1, .container_triangle2, .container_triangle3{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid white;
+
+}
+.container_triangle1{
+    border-left: 16px solid white;
+    position: absolute;
+    left: 903px;
+    transform: rotate(90deg);
+    top: 180px;
+
+}
+.container_triangle2{
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid white;
+
+    position: absolute;
+    left: 1199px;
+    transform: rotate(30deg);
+    top: 318px;
+    z-index: 1;
+
+}
+.container_triangle3{
+    position: absolute;
+    left: 1193px;
+    transform: rotate(90deg);
+    top: 399px;
+    z-index: 1;
+    border-left: 15px solid #c6283e;
+
+
+}
+.container_circle2{
+    position: absolute;
+    z-index: 1;
+    left: 880px;
+    top: 330px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+.container_circle1{
+    position: absolute;
+    top: 221px;
+    left: 1204px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #c6283e;
+
+
+}
