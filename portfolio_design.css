@@ -943,7 +943,7 @@ nav{
         position: absolute;
         /* left: 20px; */
         right: 70%;
-        top: 42px;
+        top: 18px;
     }
     h1{
         font-size: 25px;
@@ -959,6 +959,7 @@ nav{
     }
     .first_para{
         font-size: 18px;
+        font-weight: 300;
     }
     .box1, .box2, .box3,.box4{
         font-size: 15px;
@@ -1097,10 +1098,34 @@ nav{
     #menubar{
         display: block;
         color: white;
-        padding-top: 26px;
+        /* padding-top: 26px; */
         height: 0;
     }
-
+    .menubar_items ul li{
+       list-style: none;
+       font-size: 16px;
+       padding: 0.5em;
+    }
+    .menubar_items{
+        display: flex;
+        flex-direction: column;
+        background-color: #c6283e;
+        padding: 1em;
+        margin: 1em 0;
+        font-family: 'Encode Sans Expanded', sans-serif;  
+        border-top-left-radius: 20px;
+        border-bottom-right-radius:20px ;
+    }
+    .menubar_items ul li:hover{
+        background: #fff;
+        color: #030303;
+    }
+}
+.d-none {
+    display: none !important;
+}
+.d-block {
+    display: block !important;
 }
 
 

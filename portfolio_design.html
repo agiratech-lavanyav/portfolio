@@ -52,8 +52,21 @@
         <div class="container_sub">
             <div class="titlebar">
                 <div id="menubar">
-                    <i  class="fa-solid fa-bars"></i>
+                    <div class="nav-icon">
+                        <i  class="fa-solid fa-bars"></i>
+                        <i  class="fa-solid fa-xmark d-none"></i>
+                    </div>
                     
+                    <div class="menubar_items d-none">
+                        <ul>
+                            <li>About Me</li>
+                            <li>Services</li>
+                            <li>Portfolio</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+
                 </div>
                 <img class="olympic_ring" src="../portfolio/olympic ring.png">
                 <nav>
@@ -487,4 +500,17 @@
         </div>
     </div>
 </body>
+<script>
+    menuItems = document.querySelector('.nav-icon');
+    menubarItems = document.querySelector('.menubar_items');
+    bar = document.querySelector('.nav-icon .fa-bars');
+    xmark = document.querySelector('.nav-icon .fa-xmark');
+    menuItems.addEventListener("click", myFunction);
+    function myFunction(){
+        // menubarItems.style.display = "block";
+        bar.classList.toggle("d-none");
+        xmark.classList.toggle("d-none");
+        menubarItems.classList.toggle("d-none");
+    }
+</script>
 </html>
