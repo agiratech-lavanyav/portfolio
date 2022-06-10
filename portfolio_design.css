@@ -426,8 +426,7 @@ h2{
     background-color: #df213c;
     color: #fff;
     border-style: none;
-    width: 190px;
-    height: 65px;
+    padding: 1.5em 3em;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -642,7 +641,7 @@ h5, .drop{
     padding-bottom: 20px;
 }
 .submit_button{
-   padding: 1em;
+   padding: 1.5em 3em;
     background-color: #df213c;
     border-style: none;
     border-radius: 5px;
@@ -874,12 +873,14 @@ nav{
 @media only screen and (max-width:576px){
     body{
         padding: 1.5em;
+        width: 435px;
     }
     .about, .grants{
         flex-direction: column;
     }
     .welcome{
         padding-right: 0;
+        text-align: center;
 
     }
     .grants{
@@ -889,19 +890,20 @@ nav{
         background-color: #292443;
         height: 50%;
         /* max-width: 82%; */
-        margin-top: 40%;
+        margin-top: 53.5%;
         padding: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px ;
     }
     .photo{
+        max-width: 380px;
         grid-template-columns: 1fr;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 10%;
         border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px ;
-        background: rgb(223, 216, 216);
+        border-bottom-right-radius: 50px;
+        background: #de203b;
     }
     .man{
         
@@ -909,11 +911,11 @@ nav{
         z-index: 2;
     } 
     .olympic_ring{
-        max-width: 146px;
-        height: 75px;
-        margin-left: 80%;
-        position: relative;
-        bottom: 20px;
+           /* max-width: 146px; */
+    height: 75px;
+    margin-left: 76%;
+    position: relative;
+    bottom: 26px;
         }
     .titlebar{
         display: initial;
@@ -940,14 +942,14 @@ nav{
         padding: 0.5em;
         position: absolute;
         /* left: 20px; */
-        right: 75%;
+        right: 70%;
         top: 42px;
     }
     h1{
         font-size: 25px;
     }
     .man, .circle1, .circle2, .circle3{
-        margin-left: 10%;
+        margin-left: 6%;
         
         /* display: none; */
     }
@@ -961,8 +963,16 @@ nav{
     .box1, .box2, .box3,.box4{
         font-size: 15px;
         position: relative;
-        max-width: 195px;
+        max-width: 155px;
         height: 148px;
+    }
+    .picture{
+        width: 300px;
+        height: 300px;
+    }
+    .contact_para{
+        padding-right: 1em;
+        text-align: center;
     }
     .main{
         padding-top: 0;
@@ -998,17 +1008,17 @@ nav{
         padding-top: 40px;
     }
     .name, .email, .phone, .budget, .message{
-        width: auto;
+        width: 180px;
         height: 45px;
     }
     .message{
         height: 100px;
+        width: 380px;
     }
     .items1{
         padding: 0;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-left: 10%;
     }
     .main_dashedcircle, .experience_table, .contact_us_table{
         display: none;
@@ -1025,17 +1035,17 @@ nav{
         margin-left: 88%;
     }
     .final_circle{
-        left: 19%;
+        left: 12%;
     }
     .steps, .years, .steps1{
         display: grid;
         gap: 40px;
     }
     .horizontal_line{
-        width: 91%;
+        width: 107%;
     }
     .submit_button{
-        margin-left: 40%;
+        margin-left: 27%;
     }
     .triangle{
         display: none;
@@ -1077,23 +1087,12 @@ nav{
     .contact_us_table{
         margin-top: 0;
     }
-    .details{
-        padding-left: 26%;
-    }
-    h5, .contact_para, .drop, h2, .paragraph{
+    
+    h5, .drop, h2, .paragraph{
         text-align: center;
     }
-    .container_triangle2{
-        right: 126px;
-        top: 173px; 
-    }
-    .container_circle1{
-        right: 192px;
-        top: 33px;
-    }
-    .container_triangle3{
-        top: 108px;
-        left: 83px;
+    .container_triangle2,  .container_circle1,  .container_triangle3  {
+       display: none;
     }
     #menubar{
         display: block;
